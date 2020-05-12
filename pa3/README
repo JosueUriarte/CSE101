@@ -1,0 +1,40 @@
+Josue Uriarte
+joauriar
+pa3
+
+Files included:
+
+Arithmetic.c
+-Takes inputs from a file and outputs a file
+
+BigInteger.c
+-The implementation file for BigInteger ADT
+
+BigInteger.h
+-The header file for BigInteger ADT
+
+BigIntegerTest.c
+-Test client for BigInteger ADT
+
+List.c
+-Implementation file for List ADT
+
+List.h
+-Header file for List ADT
+
+ListTest.c
+-Test client for List ADT
+
+Makefile
+-The Makefile for Arithmetic.c
+
+README
+-File that has all files with descriptions and notes
+
+
+Notes:
+Could not figure out why I was getting invalid reads.
+I am very tired!
+I pass 4 out of the 10 test cases within all those errors.
+Hope you could find that and hope im not docked to many points
+because of it. Thank you and goodnight! :)

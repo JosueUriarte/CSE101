@@ -1,0 +1,36 @@
+Josue Uriarte
+joauriar
+pa4
+
+Files included:
+
+List.c
+-Implementation file for List ADT
+
+List.h
+-Header file for List ADT
+
+Graph.c
+-Implementation file for Graph ADT
+
+Graph.h
+-Header file for Graph ADT
+
+GraphTest.c
+-Test Client made by me to test Graph.c
+
+FindPath.c
+-Adds verts to a graph and then prints the distance and shortest
+-path from the source to the destination vertex
+
+Makefile
+-The Makefile for FindPath.c
+
+README
+-File that has all files with descriptions and notes
+
+
+
+Notes:
+I am very bad with finding memory leaks so
+im sorry for you having to see all those leaks.

@@ -1,0 +1,23 @@
+Josue Uriarte
+joauriar
+pa2
+
+Files included:
+
+Sparse.c
+Matrix.c
+Matrix.h
+MatrixTest.c
+List.c
+List.h
+ListTest.c
+Makefile
+README
+
+notes:
+
+Could not for the love of Tantalo figure out
+why I was getting invalid reads for some of the tests.
+Hope to not get docked points for that.
+I pass 10 of the test cases. Hope youre able to find that within
+all those errors. 

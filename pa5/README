@@ -1,0 +1,36 @@
+Josue Uriarte
+joauriar
+pa5
+
+Files included:
+
+List.c
+-Implementation file for List ADT
+
+List.h
+-Header file for List ADT
+
+Graph.c
+-Implementation file for Graph ADT
+
+Graph.h
+-Header file for Graph ADT
+
+GraphTest.c
+-Test Client made by me to test Graph.c
+
+FindComponents.c
+-Adds verts to a graph and then prints the strongly
+connected components after using DFS and Transpose
+
+Makefile
+-The Makefile for FindComponents.c
+
+README
+-File that has all files with descriptions and notes
+
+
+Notes:
+Could not find the memory leaks. Sorry for all the text you'll
+likely have to go through to find my score. Thank you and have 
+a good Christmas/Winter Break !!!

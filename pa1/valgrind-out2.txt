@@ -1,0 +1,90 @@
+==10517== Memcheck, a memory error detector
+==10517== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==10517== Using Valgrind-3.14.0-353a3587bb-20181007X and LibVEX; rerun with -h for copyright info
+==10517== Command: Lex infile2.txt outfile2.txt
+==10517== 
+--10517-- Valgrind options:
+--10517--    --leak-check=full
+--10517--    -v
+--10517-- Contents of /proc/version:
+--10517--   Linux version 3.10.0-1062.1.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-39) (GCC) ) #1 SMP Fri Sep 13 22:55:44 UTC 2019
+--10517-- 
+--10517-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-rdtscp-sse3-avx
+--10517-- Page sizes: currently 4096, max supported 4096
+--10517-- Valgrind library directory: /opt/rh/devtoolset-8/root/usr/lib64/valgrind
+--10517-- Reading syms from /afs/cats.ucsc.edu/users/y/joauriar/cse101/pa1/Lex
+--10517-- Reading syms from /usr/lib64/ld-2.17.so
+--10517--   Considering /usr/lib/debug/.build-id/5c/c1a53b747a7e4d21198723c2b633e54f3c06d9.debug ..
+--10517--   .. build-id is valid
+--10517-- Reading syms from /opt/rh/devtoolset-8/root/usr/lib64/valgrind/memcheck-amd64-linux
+--10517--    object doesn't have a symbol table
+--10517--    object doesn't have a dynamic symbol table
+--10517-- Scheduler: using generic scheduler lock implementation.
+--10517-- Reading suppressions file: /opt/rh/devtoolset-8/root/usr/lib64/valgrind/default.supp
+==10517== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-10517-by-joauriar-on-unix1.lt.ucsc.edu
+==10517== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-10517-by-joauriar-on-unix1.lt.ucsc.edu
+==10517== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-10517-by-joauriar-on-unix1.lt.ucsc.edu
+==10517== 
+==10517== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==10517== don't want to do, unless you know exactly what you're doing,
+==10517== or are doing some strange experiment):
+==10517==   /opt/rh/devtoolset-8/root/usr/lib64/valgrind/../../bin/vgdb --pid=10517 ...command...
+==10517== 
+==10517== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==10517==   /path/to/gdb Lex
+==10517== and then give GDB the following command
+==10517==   target remote | /opt/rh/devtoolset-8/root/usr/lib64/valgrind/../../bin/vgdb --pid=10517
+==10517== --pid is optional if only one valgrind process is running
+==10517== 
+--10517-- REDIR: 0x4019df0 (ld-linux-x86-64.so.2:strlen) redirected to 0x580c66c5 (???)
+--10517-- REDIR: 0x4019bc0 (ld-linux-x86-64.so.2:index) redirected to 0x580c66df (???)
+--10517-- Reading syms from /opt/rh/devtoolset-8/root/usr/lib64/valgrind/vgpreload_core-amd64-linux.so
+--10517-- Reading syms from /opt/rh/devtoolset-8/root/usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so
+==10517== WARNING: new redirection conflicts with existing -- ignoring it
+--10517--     old: 0x04019df0 (strlen              ) R-> (0000.0) 0x580c66c5 ???
+--10517--     new: 0x04019df0 (strlen              ) R-> (2007.0) 0x04c2d0a0 strlen
+--10517-- REDIR: 0x4019d70 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c2e1f0 (strcmp)
+--10517-- REDIR: 0x401aa30 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c31da0 (mempcpy)
+--10517-- Reading syms from /usr/lib64/libc-2.17.so
+--10517--   Considering /usr/lib/debug/.build-id/39/8944d32cf16a67af51067a326e6c0cc14f90ed.debug ..
+--10517--   .. build-id is valid
+--10517-- REDIR: 0x4ec70e0 (libc.so.6:strcasecmp) redirected to 0x4a24740 (_vgnU_ifunc_wrapper)
+--10517-- REDIR: 0x4ec3e60 (libc.so.6:strnlen) redirected to 0x4a24740 (_vgnU_ifunc_wrapper)
+--10517-- REDIR: 0x4ec93b0 (libc.so.6:strncasecmp) redirected to 0x4a24740 (_vgnU_ifunc_wrapper)
+--10517-- REDIR: 0x4ec68c0 (libc.so.6:memset) redirected to 0x4a24740 (_vgnU_ifunc_wrapper)
+--10517-- REDIR: 0x4ec6870 (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4a24740 (_vgnU_ifunc_wrapper)
+--10517-- REDIR: 0x4ec5850 (libc.so.6:__GI_strrchr) redirected to 0x4c2ca60 (__GI_strrchr)
+--10517-- REDIR: 0x4ebca90 (libc.so.6:malloc) redirected to 0x4c29ddc (malloc)
+--10517-- REDIR: 0x4edc8d0 (libc.so.6:__GI_strstr) redirected to 0x4c32030 (__strstr_sse2)
+--10517-- REDIR: 0x4ec5f50 (libc.so.6:memchr) redirected to 0x4c2e290 (memchr)
+--10517-- REDIR: 0x4ecbaf0 (libc.so.6:__GI_memcpy) redirected to 0x4c2eea0 (__GI_memcpy)
+--10517-- REDIR: 0x4ec3770 (libc.so.6:strcpy) redirected to 0x4a24740 (_vgnU_ifunc_wrapper)
+--10517-- REDIR: 0x4ed1690 (libc.so.6:__strcpy_sse2_unaligned) redirected to 0x4c2d0c0 (strcpy)
+--10517-- REDIR: 0x4ec22e0 (libc.so.6:strcmp) redirected to 0x4a24740 (_vgnU_ifunc_wrapper)
+--10517-- REDIR: 0x4f75d40 (libc.so.6:__strcmp_sse42) redirected to 0x4c2e1a0 (__strcmp_sse42)
+--10517-- REDIR: 0x4ec3d80 (libc.so.6:__GI_strlen) redirected to 0x4c2d000 (__GI_strlen)
+--10517-- REDIR: 0x4ec6a90 (libc.so.6:__GI_mempcpy) redirected to 0x4c31ad0 (__GI_mempcpy)
+--10517-- REDIR: 0x4ebceb0 (libc.so.6:free) redirected to 0x4c2aed6 (free)
+==10517== 
+==10517== HEAP SUMMARY:
+==10517==     in use at exit: 24,000 bytes in 1,000 blocks
+==10517==   total heap usage: 2,003 allocs, 1,003 frees, 125,168 bytes allocated
+==10517== 
+==10517== Searching for pointers to 1,000 not-freed blocks
+==10517== Checked 70,544 bytes
+==10517== 
+==10517== 24,000 (24 direct, 23,976 indirect) bytes in 1 blocks are definitely lost in loss record 3 of 3
+==10517==    at 0x4C29E63: malloc (vg_replace_malloc.c:309)
+==10517==    by 0x400C9C: newNode (List.c:41)
+==10517==    by 0x40121F: append (List.c:266)
+==10517==    by 0x400AF8: main (Lex.c:49)
+==10517== 
+==10517== LEAK SUMMARY:
+==10517==    definitely lost: 24 bytes in 1 blocks
+==10517==    indirectly lost: 23,976 bytes in 999 blocks
+==10517==      possibly lost: 0 bytes in 0 blocks
+==10517==    still reachable: 0 bytes in 0 blocks
+==10517==         suppressed: 0 bytes in 0 blocks
+==10517== 
+==10517== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==10517== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
